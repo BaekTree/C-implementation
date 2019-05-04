@@ -255,6 +255,8 @@ void showQ(Q s){
                 printf("%d ",s.nodes[i%s.capa]->benefit);
             if(s.tail < s. head)
                 printf("%d ",s.nodes[i]->benefit);
+            if (s.tail == s.head && s.tail != -1)
+                printf("%d ", s.nodes[i]->benefit);
         }
     }
 }
